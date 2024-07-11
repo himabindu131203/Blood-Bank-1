@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 
-const bankSchema=new mongoose.schema(
+const bankSchema=new mongoose.Schema(
     {
         state:{
             type:String,
