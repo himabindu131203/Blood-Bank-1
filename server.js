@@ -12,7 +12,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.set("view engine", "ejs");
 
-console.log("..HI..");
 app.get("/register", async (req, res) => {
   console.log("Welcome to home page");
   res.render("register");
