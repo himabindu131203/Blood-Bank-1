@@ -1,8 +1,8 @@
 const express = require("express");
-require("./config/dbconnect");
+require("./controllers/config/dbconnect");
 const app = express();
 const User = require("./models/user.js");
-//const Bank=require("./models/banks.js")
+const Bank=require("./models/banks.js")
 app.use(express.json());
 const methodOverride = require("method-override");
 const cookieparser = require("cookie-parser");
